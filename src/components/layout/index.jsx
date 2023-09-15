@@ -1,5 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Outlet, useLocation } from "react-router-dom";
+import {
+  Outlet,
+  useLocation,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
 import {
   Layout as AntdLayout,
   Menu,
@@ -83,6 +88,18 @@ export const Layout = () => {
   const [selectedKeys, setSelectedKeys] = useState(
     getSelectKeys(location.pathname, location.hash)
   );
+  const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const pathname = searchParams.get("pathname");
+    const hash = searchParams.get("hash");
+
+    if (pathname || hash) {
+      setSearchParams({});
+      navigate(`${pathname || ""}#${hash || ""}`, { replace: true });
+    }
+  }, []);
 
   useEffect(() => {
     setOpenKeys(getOpenedKeys(location.pathname));

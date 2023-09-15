@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>404</title>
+  </head>
+  <body>
+    <script>
+      const pathname = window.location.pathname;
+      const hash = window.location.hash.replace("#", "");
+
+      const searchParams = new URLSearchParams();
+      searchParams.append("pathname", pathname);
+      searchParams.append("hash", hash);
+
+      const url = "https://ytserilo.github.io/react-dynamic-virtual-tree-doc";
+      window.location.href = `${url}?${searchParams.toString()}`;
+    </script>
+  </body>
+</html>
