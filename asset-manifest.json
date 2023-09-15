@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-dynamic-virtual-tree-doc/static/css/main.56efba8d.css",
+    "main.js": "/react-dynamic-virtual-tree-doc/static/js/main.f52b4344.js",
+    "static/js/787.7c6b3674.chunk.js": "/react-dynamic-virtual-tree-doc/static/js/787.7c6b3674.chunk.js",
+    "static/media/simpleTree2.png": "/react-dynamic-virtual-tree-doc/static/media/simpleTree2.d0653dba6fe6065bb1c5.png",
+    "static/media/tree.png": "/react-dynamic-virtual-tree-doc/static/media/tree.82a32dc1e32c16ad898b.png",
+    "static/media/simpleTree.png": "/react-dynamic-virtual-tree-doc/static/media/simpleTree.0d950b3c9a4842b1a537.png",
+    "static/media/logo.svg": "/react-dynamic-virtual-tree-doc/static/media/logo.917d6c260a0e26b30bacf139d0163142.svg",
+    "static/media/sun.svg": "/react-dynamic-virtual-tree-doc/static/media/sun.45cf639c60bcde89e142c6d9cb67bb50.svg",
+    "static/media/moon.svg": "/react-dynamic-virtual-tree-doc/static/media/moon.e2da570e08b82fe1a48c7b0d3104637f.svg",
+    "index.html": "/react-dynamic-virtual-tree-doc/index.html",
+    "main.56efba8d.css.map": "/react-dynamic-virtual-tree-doc/static/css/main.56efba8d.css.map",
+    "main.f52b4344.js.map": "/react-dynamic-virtual-tree-doc/static/js/main.f52b4344.js.map",
+    "787.7c6b3674.chunk.js.map": "/react-dynamic-virtual-tree-doc/static/js/787.7c6b3674.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56efba8d.css",
+    "static/js/main.f52b4344.js"
+  ]
+}
