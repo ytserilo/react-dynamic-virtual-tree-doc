@@ -104,11 +104,24 @@ export const Layout = () => {
   useEffect(() => {
     setOpenKeys(getOpenedKeys(location.pathname));
     setSelectedKeys(getSelectKeys(location.pathname, location.hash));
+  }, [location]);
 
-    if (location.hash === "" || ref.current) {
+  useEffect(() => {
+    if (!ref.current) {
+      return;
+    }
+
+    if (location.hash !== "") {
+      const el = document.querySelector(location.hash);
+      if (!el) {
+        return;
+      }
+      const { top } = el.getBoundingClientRect();
+      ref.current.scrollTo({ top: top - 55 });
+    } else {
       ref.current.scrollTo({ top: 0 });
     }
-  }, [location]);
+  }, [ref.current]);
 
   const changeTheme = (theme) => {
     return () => {
