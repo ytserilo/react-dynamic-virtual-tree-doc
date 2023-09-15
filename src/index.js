@@ -14,7 +14,7 @@ import "./index.css";
 import "highlight.js/styles/github.css";
 
 const router = createBrowserRouter(createRoutesFromElements(routes), {
-  basename: "/",
+  basename: process.env.PUBLIC_URL,
 });
 
 const Index = ({ children }) => {
