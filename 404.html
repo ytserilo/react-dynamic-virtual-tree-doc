@@ -6,7 +6,10 @@
   </head>
   <body>
     <script>
-      const pathname = window.location.pathname;
+      const pathname = window.location.pathname.replace(
+        "/react-dynamic-virtual-tree-doc",
+        ""
+      );
       const hash = window.location.hash.replace("#", "");
 
       const searchParams = new URLSearchParams();
