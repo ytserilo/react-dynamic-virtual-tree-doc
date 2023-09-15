@@ -104,9 +104,7 @@ export const Layout = () => {
   useEffect(() => {
     setOpenKeys(getOpenedKeys(location.pathname));
     setSelectedKeys(getSelectKeys(location.pathname, location.hash));
-  }, [location]);
 
-  useEffect(() => {
     if (!ref.current) {
       return;
     }
@@ -121,7 +119,7 @@ export const Layout = () => {
     } else {
       ref.current.scrollTo({ top: 0 });
     }
-  }, [ref.current]);
+  }, [location]);
 
   const changeTheme = (theme) => {
     return () => {
