@@ -190,7 +190,7 @@ export const Layout = () => {
             </Content>
           </div>
           <Footer style={{ textAlign: "center" }}>
-            <strong>react-dynamic-virtual-tree</strong> created by Yatsemirkyi.
+            <strong>react-dynamic-virtual-tree</strong> created by Yatsemirskyi.
           </Footer>
         </AntdLayout>
       </div>
