@@ -248,8 +248,7 @@ const genTreeData = () => {
         data: { id: Math.random(), data: new Date().toDateString() },
       };
 
-      if (Math.random() > 0.5) {
-        for (let k = 0; k < 10; k++) {
+      for (let k = 0; k < 10; k++) {
           const itemChildChild: Item = {
             id: \`\${i}-\${j}-\${k}\`,
             children: [],
@@ -257,7 +256,6 @@ const genTreeData = () => {
           };
 
           itemChild.children.push(itemChildChild);
-        }
       }
 
       item.children.push(itemChild);

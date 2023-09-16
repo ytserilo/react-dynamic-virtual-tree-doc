@@ -79,14 +79,18 @@ const VirtualTreeIndex = ({ item }) => {
   );
 };
 
-export const VirtualTreeChildrenHeightChanging = () => {
+export const SimpleVirtualTreeEditableStructure = () => {
   const [treeData, setTreeData] = useState(genTreeData());
 
+  const generateNewTreeData = () => {
+    setTreeData(genTreeData(true));
+  };
   return (
     <div className="virtual-tree">
       <VirtualTreeProvider height={300}>
         <VirtualTreeIndex item={treeData} />
       </VirtualTreeProvider>
+      <button onClick={generateNewTreeData}>regenerate</button>
     </div>
   );
 };

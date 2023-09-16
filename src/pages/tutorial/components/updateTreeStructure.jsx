@@ -1,6 +1,8 @@
 import React from "react";
+import { Collapse } from "antd";
 import { Link } from "react-router-dom";
 import { Highlight } from "../../../components/highlight";
+import { SimpleVirtualTreeEditableStructure } from "../../../examples/simpleVirtualTreeEditableStructure";
 
 export const UpdateTreeStructure = () => {
   return (
@@ -40,6 +42,16 @@ export const UpdateTreeStructure = () => {
         component, which we discussed earlier, will handle the rest of the work
         for us.
       </p>
+      <Collapse
+        size="small"
+        items={[
+          {
+            key: "example",
+            label: "Example",
+            children: <SimpleVirtualTreeEditableStructure />,
+          },
+        ]}
+      />
     </>
   );
 };

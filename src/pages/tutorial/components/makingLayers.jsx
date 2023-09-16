@@ -1,5 +1,7 @@
 import React from "react";
+import { Collapse } from "antd";
 import { Highlight } from "../../../components/highlight";
+import { SimpleVirtualTree } from "../../../examples/simpleVirtualTree";
 
 export const MakingLayers = () => {
   return (
@@ -126,6 +128,16 @@ export const MakingLayers = () => {
           remain the same.
         </p>
       </blockquote>
+      <Collapse
+        size="small"
+        items={[
+          {
+            key: "example",
+            label: "Example",
+            children: <SimpleVirtualTree />,
+          },
+        ]}
+      />
     </>
   );
 };

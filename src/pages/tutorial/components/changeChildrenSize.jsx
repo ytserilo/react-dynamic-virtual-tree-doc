@@ -1,5 +1,7 @@
 import React from "react";
+import { Collapse } from "antd";
 import { Highlight } from "../../../components/highlight";
+import { VirtualTreeChildrenHeightChanging } from "../../../examples/virtualTreeChildrenHeightChanging";
 
 export const ChangeChildrenSize = () => {
   return (
@@ -75,6 +77,16 @@ export const ChangeChildrenSize = () => {
     */
  }
 };`}
+      />
+      <Collapse
+        size="small"
+        items={[
+          {
+            key: "example",
+            label: "Example",
+            children: <VirtualTreeChildrenHeightChanging />,
+          },
+        ]}
       />
     </>
   );
