@@ -8,7 +8,7 @@ export const Home = () => {
       <h1>Introduction</h1>
       <h3>Installation</h3>
       <pre lang="no-highlight">
-        <code>npm install react-virtual-tree</code>
+        <code>npm i react-dynamic-virtual-tree</code>
       </pre>
       <p>
         This library is designed for displaying homogeneous tree-like
