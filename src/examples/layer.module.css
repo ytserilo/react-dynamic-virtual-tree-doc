@@ -1,0 +1,9 @@
+.item {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.item:hover {
+  background-color: var(--menu-item-selected-background);
+  color: var(--menu-item-selected-color);
+}

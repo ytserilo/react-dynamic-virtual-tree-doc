@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import styles from "../../../layer.module.css";
 
 export const ThirdLayer = ({ onInitHeight, listItem, sample, props }) => {
   const { item } = props;
@@ -24,9 +25,8 @@ export const ThirdLayer = ({ onInitHeight, listItem, sample, props }) => {
             padding: 4,
           }}
         >
-          <div>
+          <div className={styles.item}>
             <p>{item.data.data.toString()}</p>
-            <p>{item.data.id}</p>
           </div>
         </div>
       )}
@@ -42,9 +42,8 @@ export const ThirdLayer = ({ onInitHeight, listItem, sample, props }) => {
           marginLeft: 20,
         }}
       >
-        <div>
+        <div className={styles.item}>
           <p>{item.data.data.toString()}</p>
-          <p>{item.data.id}</p>
         </div>
       </div>
     </>

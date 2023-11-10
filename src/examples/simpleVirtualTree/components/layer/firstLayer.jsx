@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { LayerComponent } from "react-dynamic-virtual-tree";
 import { SecondLayer } from "./secondLayer";
+import styles from "../../../layer.module.css";
 
 export const FirstLayer = ({
   onInitHeight,
@@ -39,15 +40,13 @@ export const FirstLayer = ({
       }}
     >
       {sample && (
-        <div ref={ref}>
+        <div ref={ref} className={styles.item}>
           <p>{item.data.data.toString()}</p>
-          <p>{item.data.id}</p>
         </div>
       )}
 
-      <div>
+      <div className={styles.item}>
         <p>{item.data.data.toString()}</p>
-        <p>{item.data.id}</p>
       </div>
       <div style={{ position: "relative" }}>
         <LayerComponent

@@ -4,7 +4,7 @@ export const genTreeData = (random = false) => {
   const root = {
     id: "root",
     children: [],
-    data: { id: Math.random(), data: new Date().toDateString() },
+    data: { id: Math.random(), data: "root" },
   };
 
   const iMax = random ? Math.random() * 10 : 10;
@@ -12,7 +12,7 @@ export const genTreeData = (random = false) => {
     const item = {
       id: `${i}`,
       children: [],
-      data: { id: Math.random(), data: new Date().toDateString() },
+      data: { id: Math.random(), data: `Item ${i}` },
     };
 
     const jMax = random ? Math.random() * 10 : 10;
@@ -20,7 +20,7 @@ export const genTreeData = (random = false) => {
       const itemChild = {
         id: `${i}-${j}`,
         children: [],
-        data: { id: Math.random(), data: new Date().toDateString() },
+        data: { id: Math.random(), data: `Item ${i}.${j}` },
       };
 
       const kMax = random ? Math.random() * 10 : 10;
@@ -28,7 +28,7 @@ export const genTreeData = (random = false) => {
         const itemChildChild = {
           id: `${i}-${j}-${k}`,
           children: [],
-          data: { id: Math.random(), data: new Date().toDateString() },
+          data: { id: Math.random(), data: `Item ${i}.${j}.${k}` },
         };
         itemChild.children.push(itemChildChild);
       }

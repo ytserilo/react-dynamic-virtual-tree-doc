@@ -23,7 +23,6 @@ export const ChangeChildrenSize = () => {
         language="typescript"
         code={`<div onClick={toggleOpen}>
  <p>{item.data.data.toString()}</p>
- <p>{item.data.id}</p>
 </div>
 `}
       />

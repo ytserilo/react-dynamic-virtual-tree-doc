@@ -83,7 +83,6 @@ export const MakingLayers = () => {
      {sample && (
        <div ref={ref}>
          <p>{item.data.data.toString()}</p>
-         <p>{item.data.id}</p>
        </div>
      )}
      {
@@ -97,7 +96,6 @@ export const MakingLayers = () => {
 
      <div>
        <p>{item.data.data.toString()}</p>
-       <p>{item.data.id}</p>
      </div>
      <div style={{ position: "relative" }}>
        <LayerComponent<LayerProps | undefined> getComponentProps={getComponentProps} listItem={listItem} layer={layer}>

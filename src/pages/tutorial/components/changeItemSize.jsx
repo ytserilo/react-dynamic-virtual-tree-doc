@@ -99,7 +99,6 @@ export const ChangeItemSize = () => {
        >
          <div>
            <p>{item.data.data.toString()}</p>
-           <p>{item.data.id}</p>
          </div>
        </div>
      )}
@@ -119,7 +118,6 @@ export const ChangeItemSize = () => {
      >
        <div>
          <p>{item.data.data.toString()}</p>
-         <p>{item.data.id}</p>
 
          {open && <div style={{ height: 120 }}>Additional content</div>}
        </div>

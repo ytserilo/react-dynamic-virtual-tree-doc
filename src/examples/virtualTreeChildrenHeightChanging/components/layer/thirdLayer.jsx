@@ -1,5 +1,6 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { VirtualTreeContext } from "react-dynamic-virtual-tree";
+import styles from "../../../layer.module.css";
 
 export const ThirdLayer = ({ onInitHeight, listItem, sample, props }) => {
   const { item } = props;
@@ -60,9 +61,8 @@ export const ThirdLayer = ({ onInitHeight, listItem, sample, props }) => {
             padding: 4,
           }}
         >
-          <div>
+          <div className={styles.item}>
             <p>{item.data.data.toString()}</p>
-            <p>{item.data.id}</p>
           </div>
         </div>
       )}
@@ -80,9 +80,8 @@ export const ThirdLayer = ({ onInitHeight, listItem, sample, props }) => {
           marginLeft: 20,
         }}
       >
-        <div>
+        <div className={styles.item}>
           <p>{item.data.data.toString()}</p>
-          <p>{item.data.id}</p>
 
           {open && <div style={{ height: 120 }}>Additional content</div>}
         </div>
